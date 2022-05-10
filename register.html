@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Style/style.css" type="text/css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <header class="header"></header>
+
+    <section class="login">
+      <section class="login__container">
+        <h2>Registro</h2>
+
+        <form class="login__container--form" id="form">
+          <input
+            class="login__input"
+            type="text"
+            placeholder="Nombre"
+            id="user_name"
+            required
+          />
+          <input
+            class="login__input"
+            type="text"
+            placeholder="Apellido"
+            id="last_name"
+            required
+          />
+          <input
+            class="login__input"
+            type="number"
+            placeholder="Edad"
+            id="age"
+            min="1"
+            pattern="^[0-9]+"
+            required
+          />
+          <input
+            class="login__input"
+            type="email"
+            placeholder="Correo"
+            id="email"
+            required
+          />
+          <input
+            class="login__input"
+            type="password"
+            placeholder="Contraseña"
+            required
+            id="password"
+          />
+          <p class="warnings" id="warnings"></p>
+          <button class="button" type="submit" id="send_info">Enviar</button>
+        </form>
+
+        <section class="login__container--social-media">
+          <div>
+            <img src="img\facebook.png" alt="google" />Inicia sesion con Google
+          </div>
+          <div>
+            <img src="img\Instagram.png" alt="Instagram" />Inicia sesion con
+            Instagram
+          </div>
+        </section>
+
+        <p class="login__container--register">
+          Ya tienes una cuenta ?
+          <a onclick="linkToHome();">Inicia Sesion</a>
+        </p>
+      </section>
+    </section>
+
+    <footer class="footer"></footer>
+
+    <script src="./scripts/formRegister.js"></script>
+  </body>
+</html>

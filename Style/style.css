@@ -1,0 +1,143 @@
+/*INDEX*/
+body {
+    margin: 0px;
+    background: linear-gradient(90deg, #24dbbd, #0177e4);
+    font-family: "Mulish", sans-serif;
+  }
+
+  .warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: rgb(255, 196, 0);
+    padding-top: 20px;
+}
+
+  /*LOGIN*/
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 30px;
+    min-height: calc(100vh - 200px);
+  }
+  
+  .login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    border: solid 2px white;
+    color: white;
+    padding: 60px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  .login__container--form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login__container--form label {
+    font-size: 14px;
+  }
+  
+  .login__container--remember {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .login__container--remember a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .login__container--remember a:hover {
+    text-decoration: underline;
+  }
+  
+  .login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px;
+  }
+  
+  .login__container--social-media > div > img {
+    width: 25px;
+    margin: 10px;
+  }
+  
+  .login__container--register {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .login__container--register a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .login__container--register a:hover {
+    text-decoration: underline;
+  }
+  
+  .login__input {
+    font-family: "Mulish", sans-serif;
+    outline: none;
+    margin: 10px;
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  ::placeholder {
+    /*pseudo elemento*/
+    color: white;
+  }
+  
+  .button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    outline: none;
+    height: 50px;
+    margin: 25px;
+  }
+
+  
+  /*QUERY MOBILE*/
+  @media only screen and (max-width: 600px) {
+    .login__container {
+      background-color: transparent;
+      border: none;
+      padding: 0px;
+      width: 100%;
+    }
+  
+    .registro__container {
+      background-color: transparent;
+      border: none;
+      padding: 0px;
+      width: 100%;
+    }
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <header class="header"></header>
+
+    <section class="login">
+      <section class="login__container">
+        <h2>Inicia sesion</h2>
+
+        <form action="" class="login__container--form" method="post" id="form">
+          <input
+            class="login__input"
+            type="email"
+            placeholder="Correo"
+            id="email"
+            required
+          />
+          <input
+            class="login__input"
+            type="password"
+            placeholder="Contraseña"
+            id="password"
+            required
+          />
+
+          <p class="warnings" id="warnings"></p>
+          <button type="submit" class="button" id="send">Inicia Sesion</button>
+          <div class="login__container--remember">
+            <label>
+              <input type="checkbox" id="cbox1" value="checkbox" />Recuerdame
+            </label>
+            <a href="">Olvide mi contraseña</a>
+          </div>
+        </form>
+
+        <section class="login__container--social-media">
+          <div>
+            <img src="img\facebook.png" alt="google" />Inicia sesion con
+            Facebook
+          </div>
+          <div>
+            <img src="img\Instagram.png" alt="Instagram" />Inicia sesion con
+            Instagram
+          </div>
+        </section>
+
+        <p class="login__container--register">
+          No tienes ninguna cuenta
+          <a onclick="linkTo();">Registrate</a>
+        </p>
+      </section>
+    </section>
+
+    <footer class="footer"></footer>
+
+    <script src="./scripts/formLogin.js"></script>
+  </body>
+</html>
